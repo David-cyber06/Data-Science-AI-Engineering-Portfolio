@@ -7,7 +7,7 @@
 
 ## Objective
 
-This portfolio demonstrates my ability to extract, clean, analyze, and visualize data using SQL, Python, and modern BI tools (Power BI, Tableau). Each project is designed to showcase the skills required for the **Data Analytics & BI Intern** role at Keyrus Colombia.
+This portfolio demonstrates my ability to extract, clean, analyze, and visualize data using SQL, Python, and modern BI tools (Power BI, Tableau). Each project is designed to showcase the skills required for the **Data Analytics & BI** role.
 
 ---
 
