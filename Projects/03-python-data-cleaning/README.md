@@ -58,3 +58,43 @@ El análisis incluye:
 
 ## 📂 Estructura del Proyecto
 
+
+---
+
+## 📊 Visualizaciones
+
+| Gráfica | Descripción |
+|---------|-------------|
+| ![Total Charges](images/01_distribucion_totalcharges_antes_despues.png) | Distribución de Total Charges (Antes/Después) |
+| ![Churn](images/02_distribucion_churn.png) | Distribución de Churn |
+| ![Tenure](images/03_distribucion_tenure.png) | Distribución de Antigüedad |
+| ![Monthly Charges](images/04_distribucion_monthlycharges.png) | Distribución de Cargos Mensuales |
+| ![Churn vs Tenure](images/05_churn_vs_tenure.png) | Churn vs Antigüedad |
+| ![Churn vs Monthly](images/06_churn_vs_monthlycharges.png) | Churn vs Cargos Mensuales |
+| ![Churn vs Total](images/07_churn_vs_totalcharges.png) | Churn vs Cargos Totales |
+| ![Correlación](images/08_matriz_correlacion.png) | Matriz de Correlación |
+| ![Contract](images/09_churn_vs_contract.png) | Churn por Tipo de Contrato |
+| ![Payment](images/10_churn_vs_paymentmethod.png) | Churn por Método de Pago |
+| ![Internet](images/11_churn_vs_internetservice.png) | Churn por Tipo de Internet |
+| ![Tasa Churn](images/12_tasa_churn_vs_tenure.png) | Tasa de Churn vs Antigüedad |
+
+---
+
+## 💡 Recomendaciones para el Negocio
+
+| # | Recomendación | Impacto |
+|---|---------------|---------|
+| 1 | **Programa de onboarding** para clientes nuevos (tenure=0) | Reducir churn temprano |
+| 2 | **Descuentos por fidelización** para contratos mensuales | Retener clientes |
+| 3 | **Incentivar pago automático** (especialmente Electronic check) | Reducir churn |
+| 4 | **Revisar calidad del servicio Fiber optic** | Mejorar satisfacción |
+| 5 | **Monitorear tasa de churn mensualmente** | Detectar problemas a tiempo |
+
+---
+
+## 🚀 Cómo Ejecutar el Proyecto
+
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/[TU_USUARIO]/03-python-data-cleaning.git
+cd 03-python-data-cleaning
