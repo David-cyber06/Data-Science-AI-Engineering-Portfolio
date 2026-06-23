@@ -57,15 +57,14 @@ El análisis incluye:
 ---
 
 ## 📂 Estructura del Proyecto
-
 📁 03-python-data-cleaning/
 │
-├── 📄 README.md                         ← Este archivo
-├── 📄 python_data_cleaning.ipynb        ← Notebook completo
-├── 📄 telco_churn_clean.csv             ← Dataset limpio
-├── 📄 requirements.txt                  ← Librerías necesarias
+├── 📄 README.md
+├── 📄 python_data_cleaning.ipynb
+├── 📄 telco_churn_clean.csv
+├── 📄 requirements.txt
 │
-└── 📁 images/                           ← Todas las gráficas
+└── 📁 images/
     ├── 01_distribucion_totalcharges_antes_despues.png
     ├── 02_distribucion_churn.png
     ├── 03_distribucion_tenure.png
