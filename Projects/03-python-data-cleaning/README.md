@@ -70,7 +70,7 @@ El análisis incluye:
 | ![Correlación](images/08_matriz_correlacion.png) | Matriz de Correlación |
 | ![Contract](images/09_churn_vs_contract.png) | Churn por Tipo de Contrato |
 | ![Payment](images/10_churn_vs_paymentmethod.png) | Churn por Método de Pago |
-| ![Internet](images/11_churn_vs_internetservice.png) | Churn por Tipo de Internet |
+| ![Internet](images/11_churn_vs_internet.png) | Churn por Tipo de Internet |
 | ![Tasa Churn](images/12_tasa_churn_vs_tenure.png) | Tasa de Churn vs Antigüedad |
 
 ---
