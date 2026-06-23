@@ -58,7 +58,26 @@ El análisis incluye:
 
 ## 📂 Estructura del Proyecto
 
-
+📁 03-python-data-cleaning/
+│
+├── 📄 README.md                         ← Este archivo
+├── 📄 python_data_cleaning.ipynb        ← Notebook completo
+├── 📄 telco_churn_clean.csv             ← Dataset limpio
+├── 📄 requirements.txt                  ← Librerías necesarias
+│
+└── 📁 images/                           ← Todas las gráficas
+    ├── 01_distribucion_totalcharges_antes_despues.png
+    ├── 02_distribucion_churn.png
+    ├── 03_distribucion_tenure.png
+    ├── 04_distribucion_monthlycharges.png
+    ├── 05_churn_vs_tenure.png
+    ├── 06_churn_vs_monthlycharges.png
+    ├── 07_churn_vs_totalcharges.png
+    ├── 08_matriz_correlacion.png
+    ├── 09_churn_vs_contract.png
+    ├── 10_churn_vs_paymentmethod.png
+    ├── 11_churn_vs_internetservice.png
+    └── 12_tasa_churn_vs_tenure.png
 ---
 
 ## 📊 Visualizaciones
@@ -92,9 +111,3 @@ El análisis incluye:
 
 ---
 
-## 🚀 Cómo Ejecutar el Proyecto
-
-### 1. Clonar el repositorio
-```bash
-git clone https://github.com/[TU_USUARIO]/03-python-data-cleaning.git
-cd 03-python-data-cleaning
