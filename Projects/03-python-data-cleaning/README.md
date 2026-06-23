@@ -1,6 +1,6 @@
 # 📊 Análisis de Churn - Telco Customer Churn
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/[TU_USUARIO]/03-python-data-cleaning/blob/main/python_data_cleaning.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/10fmcGYH-SMXvJ_WVdIqdiW1gTblKS_xl?usp=sharing)
 
 ---
 
