@@ -56,29 +56,6 @@ El análisis incluye:
 
 ---
 
-## 📂 Estructura del Proyecto
-📁 03-python-data-cleaning/
-│
-├── 📄 README.md
-├── 📄 python_data_cleaning.ipynb
-├── 📄 telco_churn_clean.csv
-├── 📄 requirements.txt
-│
-└── 📁 images/
-    ├── 01_distribucion_totalcharges_antes_despues.png
-    ├── 02_distribucion_churn.png
-    ├── 03_distribucion_tenure.png
-    ├── 04_distribucion_monthlycharges.png
-    ├── 05_churn_vs_tenure.png
-    ├── 06_churn_vs_monthlycharges.png
-    ├── 07_churn_vs_totalcharges.png
-    ├── 08_matriz_correlacion.png
-    ├── 09_churn_vs_contract.png
-    ├── 10_churn_vs_paymentmethod.png
-    ├── 11_churn_vs_internetservice.png
-    └── 12_tasa_churn_vs_tenure.png
----
-
 ## 📊 Visualizaciones
 
 | Gráfica | Descripción |
