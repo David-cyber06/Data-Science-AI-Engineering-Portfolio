@@ -1,7 +1,5 @@
 # 📊 SQL Data Quality Audit - Yelp Dataset
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/[TU_USUARIO]/data-analytics-portfolio/blob/main/Projects/02-sql-data-quality-audit/data_quality_audit.ipynb)
-
 ---
 
 ## 📌 Descripción del Proyecto
