@@ -1,5 +1,5 @@
 -- AUDITORÍA DE CALIDAD DE DATOS - YELP DATASET
-"""
+
 -- 1. VERIFICAR ESTRUCTURA DE TABLAS
 
 -- Ver columnas de cada tabla
