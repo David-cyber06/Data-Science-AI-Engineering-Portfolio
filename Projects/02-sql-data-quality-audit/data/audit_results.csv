@@ -1,0 +1,30 @@
+id,audit_date,table_name,issue_type,issue_count,description,severity
+33,2026-06-29,business,duplicates,0,business_id duplicados en tabla business,HIGH
+34,2026-06-29,review,duplicates,0,review_id duplicados en tabla review,HIGH
+35,2026-06-29,yelp_user,duplicates,0,user_id duplicados en tabla yelp_user,HIGH
+36,2026-06-29,business,nulls,0,business_name NULL o vacío,MEDIUM
+37,2026-06-29,business,nulls,0,city NULL o vacío,MEDIUM
+38,2026-06-29,business,nulls,20,postal_code NULL o vacío,LOW
+39,2026-06-29,business,nulls,1691,address NULL o vacío,LOW
+40,2026-06-29,business,nulls,37,categories NULL o vacío,MEDIUM
+41,2026-06-29,review,nulls,0,review_text NULL o vacío,HIGH
+42,2026-06-29,review,nulls,0,stars NULL en review,HIGH
+43,2026-06-29,review,nulls,0,user_id NULL o vacío en review,HIGH
+44,2026-06-29,review,nulls,0,business_id NULL o vacío en review,HIGH
+45,2026-06-29,yelp_user,nulls,0,user_name NULL o vacío,MEDIUM
+46,2026-06-29,yelp_user,nulls,0,review_count NULL,HIGH
+47,2026-06-29,yelp_user,nulls,0,average_stars NULL,MEDIUM
+48,2026-06-29,review,invalid_values,0,stars fuera de rango (1-5) en review,HIGH
+49,2026-06-29,business,invalid_values,0,stars fuera de rango (1-5) en business,HIGH
+50,2026-06-29,business,invalid_values,0,review_count negativo en business,HIGH
+51,2026-06-29,business,invalid_values,0,is_open inválido (0 o 1) en business,HIGH
+52,2026-06-29,yelp_user,invalid_values,0,fans negativo en yelp_user,HIGH
+53,2026-06-29,yelp_user,invalid_values,0,average_stars fuera de rango (1-5),MEDIUM
+54,2026-06-29,review,orphan_records,0,reviews sin business asociado (business_id no existe),HIGH
+55,2026-06-29,review,orphan_records,66968,reviews sin user asociado (user_id no existe),HIGH
+56,2026-06-29,business,inconsistent_data,0,business con stars > 0 pero review_count = 0,MEDIUM
+57,2026-06-29,yelp_user,inconsistent_data,49812,review_count no coincide con número real de reviews,MEDIUM
+58,2026-06-29,business,missing_data,0,latitud o longitud faltante en business,LOW
+59,2026-06-29,review,missing_data,3,reviews con texto muy corto (< 10 caracteres),LOW
+60,2026-06-29,business,missing_data,37,negocios sin categorías,MEDIUM
+61,2026-06-29,yelp_user,missing_data,0,usuarios sin amigos en el sistema,LOW
