@@ -90,14 +90,9 @@ Auditoría de calidad de datos en el dataset de Yelp utilizando **SQL (PostgreSQ
 ├── 📄 README.md
 ├── 📄 data_quality_audit.sql
 ├── 📄 data_quality_audit.ipynb
-├── 📄 data_quality_dashboard.pbix
-├── 📄 requirements.txt
 │
 ├── 📁 data/
 │   ├── audit_results.csv
-│   ├── business.csv
-│   ├── review.csv
-│   └── user.csv
 │
 ├── 📁 sql/
 │   ├── 01_create_tables.sql
