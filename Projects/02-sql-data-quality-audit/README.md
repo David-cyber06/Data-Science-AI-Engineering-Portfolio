@@ -104,4 +104,16 @@ Auditoría de calidad de datos en el dataset de Yelp utilizando **SQL (PostgreSQ
     ├── 03_incidencias_por_tipo.jpeg
     └── 04_severidad.jpeg
 ```
+---
 
+## 📌 Conclusión
+
+Este proyecto demuestra la capacidad de auditar, analizar y visualizar la calidad de datos en entornos reales, utilizando un stack tecnológico completo (**SQL + Python + Power BI**). Los hallazgos obtenidos permiten:
+
+- ✅ Identificar problemas críticos de calidad
+- ✅ Priorizar acciones de limpieza
+- ✅ Tomar decisiones informadas sobre los datos
+
+---
+
+⭐ **Proyecto completado como parte de mi portafolio de Data Analytics.** ⭐
