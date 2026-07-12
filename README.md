@@ -94,7 +94,7 @@ The portfolio is organized into **7 key areas**, each representing a level of te
 | **Biofuel Optimization** | Optimize biofuel production processes | RF, XGBoost |
 | **Crop Recommendation System** | Recommend optimal crops based on conditions | Recommendation Systems |
 
-### 📊 Business Intelligence & ML Core
+### 📊 Business Intelligence & ML Core/Advanced
 
 | Project | Description | Tech Stack |
 |---------|-------------|------------|
