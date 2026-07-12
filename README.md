@@ -38,16 +38,15 @@ This portfolio demonstrates my evolution from Data Analyst to **Data Scientist a
 ## 📂 Portfolio Structure
 
 The portfolio is organized into **7 key areas**, each representing a level of technical complexity:
-📁 data-analytics-portfolio/
-│
-├── 📁 00-about-me/                    → Professional profile & resume
-├── 📁 01-business-intelligence/       → Power BI dashboards & data quality (3 projects)
-├── 📁 02-machine-learning-core/       → Churn, segmentation, forecasting (3 projects)
-├── 📁 03-machine-learning-advanced/   → Fraud detection, sentiment analysis (2 projects)
-├── 📁 04-bio-data-science/            → 8 biotech/agtech ML projects
-├── 📁 05-mlops-production/            → 4 MLOps projects (Docker, K8s, MLflow, monitoring)
-├── 📁 06-cutting-edge-projects/       → LLM chatbot, anomaly detection, AutoML (3 projects)
-└── 📁 07-portfolio-showcase/          → Interactive demos (Streamlit, Gradio)
+
+- **00-about-me/** → Professional profile & resume
+- **01-business-intelligence/** → Power BI dashboards & data quality (3 projects)
+- **02-machine-learning-core/** → Churn, segmentation, forecasting (3 projects)
+- **03-machine-learning-advanced/** → Fraud detection, sentiment analysis (2 projects)
+- **04-bio-data-science/** → 8 biotech/agtech ML projects
+- **05-mlops-production/** → 4 MLOps projects (Docker, K8s, MLflow, monitoring)
+- **06-cutting-edge-projects/** → LLM chatbot, anomaly detection, AutoML (3 projects)
+- **07-portfolio-showcase/** → Interactive demos (Streamlit, Gradio)
 
 ### 📊 Project Breakdown by Category
 
@@ -114,11 +113,11 @@ The portfolio is organized into **7 key areas**, each representing a level of te
 
 | Institution | Program | Status |
 |-------------|---------|--------|
-| **Universidad Icesi** | Biochemical Engineering (GPA: 4.2/5.0) | 7th Semester |
+| **Universidad Icesi** | Biochemical Engineering (GPA: 4.2/5.0) | 8th Semester |
 | **Universidad del Rosario** | Diploma in Data Science | Completed Jul 2026 |
 
 **Academic Honors:**
-- 🏆 Cargill Merit-Based Scholarship – 7 consecutive semesters
+- 🏆 Cargill Merit-Based Scholarship – 8 consecutive semesters
 - 🏆 Honor Roll – Multiple semesters with GPA ≥ 4.0
 
 ---
