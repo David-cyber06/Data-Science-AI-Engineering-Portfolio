@@ -67,7 +67,7 @@ El dashboard permite monitorear el desempeño comercial mediante indicadores cla
 
 # 🖼️ Vista Previa del Dashboard
 
-![Dashboard Preview](images/dashboard_preview.png)
+![Dashboard Preview](images/dashboard_preview.jpeg)
 
 ---
 
