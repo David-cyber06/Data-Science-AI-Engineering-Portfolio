@@ -485,19 +485,6 @@ Durante el desarrollo de este proyecto se fortalecieron habilidades en:
 
 ---
 
-# 🚀 Próximas Mejoras
-
-* [ ] Implementar forecasting de ventas utilizando Prophet.
-* [ ] Incorporar segmentación de clientes mediante K-Means.
-* [ ] Publicar el dashboard en Power BI Service.
-* [ ] Integrar datos abiertos del DANE.
-* [ ] Agregar mapas geográficos interactivos.
-* [ ] Incorporar métricas de rentabilidad y margen.
-* [ ] Construir alertas automáticas para KPIs críticos.
-* [ ] Implementar análisis predictivo de demanda.
-
----
-
 # 🎓 Relevancia para Ciencia de Datos
 
 Aunque este proyecto está enfocado en Business Intelligence, constituye una base sólida para iniciativas de Data Science y Machine Learning.
@@ -515,24 +502,10 @@ Los datos y métricas construidos pueden utilizarse posteriormente para:
 
 # 👨‍💻 Autor
 
-**[Tu Nombre Completo]**
+**Jhorman David Bernal Tapias**
 
-🔗 LinkedIn: [linkedin.com/in/tu-perfil]
+💻 GitHub: [github.com/David-cyber06]
 
-💻 GitHub: [github.com/tu-usuario]
-
-📧 Correo: [[tu.email@example.com](mailto:tu.email@example.com)]
+📧 Correo: [[jhormandavid2000@gmail.com](mailto:jhormandavid2000@gmail.com)]
 
 ---
-
-# 📄 Licencia
-
-MIT License
-
-Copyright (c) 2026 [Tu Nombre Completo]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
-
----
-
-⭐ Si este proyecto te resultó interesante, considera darle una estrella al repositorio.
