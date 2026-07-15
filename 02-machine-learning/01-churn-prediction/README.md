@@ -269,7 +269,7 @@ Las matrices de confusión permiten evaluar la capacidad de cada modelo para cla
 
 | KNN | Logistic Regression |
 |------|------|
-| ![](images/03_matriz_confusión_knn.png) | ![](images/04_matriz_confusión_reglog.png) |
+| ![](images/03_matriz_confusión_kn.png) | ![](images/04_matriz_confusión_reglog.png) |
 
 ---
 
