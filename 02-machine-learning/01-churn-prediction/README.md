@@ -329,7 +329,7 @@ La siguiente tabla resume el desempeño de todos los modelos evaluados durante l
 
 La curva ROC permite evaluar la capacidad de discriminación de cada modelo independientemente del umbral de clasificación utilizado.
 
-![ROC Curves](images/09_curva_ROC_modelos_validacion.png)
+![ROC Curves](images/09_curva_ROC_modelos_validación.png)
 
 ### Interpretación de la Curva ROC
 
