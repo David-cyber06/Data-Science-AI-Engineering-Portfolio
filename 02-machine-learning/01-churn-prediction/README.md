@@ -144,6 +144,24 @@ Antes del modelado se realizó:
 * Análisis de distribuciones
 * Análisis de correlaciones
 
+# 📊 Análisis Exploratorio Inicial
+
+Antes del entrenamiento de modelos se realizó un análisis exploratorio para comprender la distribución de clientes y las relaciones entre variables.
+
+## Distribución de Churn
+
+![Distribución Churn](images/01_Distribución_proporción_churn.png)
+
+Se observa un desbalance moderado entre clientes retenidos y clientes que abandonan el servicio.
+
+---
+
+## Matriz de Correlación
+
+![Correlation Matrix](images/02_corr_matriz.png)
+
+La matriz de correlación permite identificar relaciones entre variables numéricas relevantes para el modelado predictivo.
+
 ---
 
 ## 2. Preparación de Datos
@@ -224,18 +242,101 @@ Los modelos fueron evaluados utilizando:
 
 # 🏆 Comparación de Modelos
 
+Se entrenaron y evaluaron múltiples algoritmos de clasificación para identificar el modelo con mejor capacidad predictiva.
+
 ## Modelos Evaluados
 
-| Modelo              | Accuracy (Validation) |
-| ------------------- | --------------------- |
-| KNN                 | 0.764                 |
-| Logistic Regression | 0.825                 |
-| Decision Tree       | 0.783                 |
-| SVC                 | 0.807                 |
-| Random Forest       | 0.800                 |
-| XGBoost             | Modelo Final          |
+| Modelo | Accuracy (Validation) |
+|----------|----------|
+| KNN | 0.764 |
+| Logistic Regression | 0.825 |
+| Decision Tree | 0.783 |
+| SVC | 0.807 |
+| Random Forest | 0.800 |
+| XGBoost | Modelo Final |
 
 Durante la comparación inicial, Logistic Regression y XGBoost mostraron el mejor equilibrio entre capacidad predictiva y generalización.
+
+---
+
+# 📊 Evaluación Visual de Modelos
+
+## Matrices de Confusión
+
+Las matrices de confusión permiten evaluar la capacidad de cada modelo para clasificar correctamente clientes retenidos y clientes con riesgo de abandono.
+
+### K-Nearest Neighbors vs Logistic Regression
+
+| KNN | Logistic Regression |
+|------|------|
+| ![](images/03_matriz_confusión_knn.png) | ![](images/04_matriz_confusión_reglog.png) |
+
+---
+
+### Decision Tree vs Support Vector Machine
+
+| Decision Tree | SVC |
+|------|------|
+| ![](images/05_matriz_confusión_tree.png) | ![](images/06_matriz_confusión_SVC.png) |
+
+---
+
+### Random Forest vs XGBoost
+
+| Random Forest | XGBoost |
+|------|------|
+| ![](images/07_matriz_confusión_RF.png) | ![](images/08_matriz_confusión_XGB.png) |
+
+---
+
+# 📈 Comparación Global de Métricas
+
+La siguiente tabla resume el desempeño de todos los modelos evaluados durante la fase de validación.
+
+> Fuente: `data/metricas_total_modelos.csv`
+
+### Resultados de Entrenamiento vs Validación
+
+| Modelo | Accuracy (Train) | Accuracy (Validation) |
+|----------|----------|----------|
+| KNN | 0.841 | 0.764 |
+| Logistic Regression | 0.804 | 0.825 |
+| Decision Tree | 0.998 | 0.773 |
+| SVC | 0.796 | 0.807 |
+| Random Forest | 0.998 | 0.806 |
+| XGBoost | 0.956 | 0.791 |
+
+### Métricas Completas de Validación
+
+| Modelo | Accuracy | Precision | Recall | F1 Score | ROC-AUC |
+|---------|---------|---------|---------|---------|---------|
+| KNN | 0.764 | 0.540 | 0.845 | 0.558 | 0.549 |
+| Logistic Regression | 0.825 | 0.591 | 0.910 | 0.704 | 0.642 |
+| Decision Tree | 0.773 | 0.511 | 0.868 | 0.582 | 0.544 |
+| SVC | 0.807 | 0.495 | 0.920 | 0.690 | 0.576 |
+| Random Forest | 0.806 | 0.460 | 0.930 | 0.705 | 0.557 |
+| XGBoost | 0.791 | 0.529 | 0.886 | 0.627 | 0.574 |
+
+### Interpretación
+
+- Logistic Regression obtuvo el mejor desempeño global en validación (Accuracy = 82.5%).
+- Random Forest y Decision Tree muestran señales claras de overfitting, alcanzando casi 100% de accuracy en entrenamiento pero disminuyendo considerablemente en validación.
+- SVC y Logistic Regression presentan una mejor capacidad de generalización.
+- XGBoost mostró un desempeño competitivo, aunque sin superar a Logistic Regression en este dataset.
+- Debido a su equilibrio entre Accuracy, Recall y F1 Score, Logistic Regression fue uno de los modelos más robustos durante la fase de validación.
+
+## 📉 Curva ROC Comparativa
+
+La curva ROC permite evaluar la capacidad de discriminación de cada modelo independientemente del umbral de clasificación utilizado.
+
+![ROC Curves](images/09_curva_ROC_modelos_validacion.png)
+
+### Interpretación de la Curva ROC
+
+- Logistic Regression y XGBoost presentan las curvas más cercanas a la esquina superior izquierda.
+- Los modelos basados en árboles muestran un desempeño competitivo, aunque con menor capacidad de generalización.
+- La métrica ROC-AUC complementa Accuracy, Precision, Recall y F1 Score al evaluar el rendimiento global del clasificador.
+- Los resultados obtenidos justifican la selección de Logistic Regression y XGBoost para la fase de optimización mediante GridSearchCV.
 
 ---
 
