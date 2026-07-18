@@ -144,6 +144,10 @@ Esta estrategia produjo los mejores resultados.
 
 Primer modelo de referencia para evaluar el efecto del balanceo mediante reducción de la clase mayoritaria.
 
+# 📈 Metricas 
+
+![Precision Recall Curve](images/pr_curve_comparison.png)
+
 ---
 
 ## Modelo 2
@@ -151,6 +155,10 @@ Primer modelo de referencia para evaluar el efecto del balanceo mediante reducci
 ### XGBoost + SMOTE (5000/5000)
 
 Modelo entrenado utilizando una estrategia de balanceo sintético moderada.
+
+# 📈 Metricas 
+
+![Precision Recall Curve](images/pr_curve_comparison.png)
 
 ---
 
@@ -160,6 +168,10 @@ Modelo entrenado utilizando una estrategia de balanceo sintético moderada.
 
 Modelo entrenado utilizando la estrategia de balanceo más completa.
 
+# 📈 Metricas 
+
+![Precision Recall Curve](images/pr_curve_comparison.png)
+
 ---
 
 ## Modelo 4
@@ -167,6 +179,10 @@ Modelo entrenado utilizando la estrategia de balanceo más completa.
 ### Red Neuronal Multicapa
 
 Arquitectura Deep Learning desarrollada para comparar su desempeño frente a los modelos basados en árboles.
+
+# 📈 Metricas 
+
+![Precision Recall Curve](images/pr_curve_comparison.png)
 
 ---
 
@@ -197,7 +213,7 @@ Dado el fuerte desbalance de clases, se utilizaron múltiples métricas de evalu
 
 ---
 
-# 📈 Curvas Precision-Recall
+# 📈 Curvas Precision-Recall Modelos XGB 
 
 ![Precision Recall Curve](images/pr_curve_comparison.png)
 
@@ -211,7 +227,7 @@ Esto resulta especialmente relevante en problemas de fraude debido al fuerte des
 
 ---
 
-# 📉 Curvas ROC
+# 📉 Curvas ROC Modelos XGB
 
 ![ROC Curve](images/roc_curve_comparison.png)
 
