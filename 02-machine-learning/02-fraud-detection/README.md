@@ -70,22 +70,25 @@ Por ello, Machine Learning permite construir modelos capaces de identificar patr
 
 # 🔍 Análisis Exploratorio de Datos (EDA)
 
-Se realizó un análisis exploratorio para comprender la estructura del dataset:
+Se realizó un análisis exploratorio para comprender la estructura del dataset.
 
-### Actividades realizadas
+## Distribución de la Variable Objetivo
 
-- Análisis de la variable objetivo.
-- Evaluación del desbalance de clases.
-- Verificación de valores faltantes.
-- Distribución de variables.
-- Matriz de correlación.
-- Identificación de patrones relevantes.
+![Distribución de Fraude](images/01_distribucion_class_fraud.png)
 
-### Principales Hallazgos
+### Hallazgo
 
-- El dataset presenta un desbalance extremo.
-- Las transacciones fraudulentas representan menos del 1% del total.
-- Algunas variables presentan relaciones importantes con la variable objetivo.
+El dataset presenta un desbalance extremo, donde las transacciones fraudulentas representan menos del 1% de las observaciones.
+
+---
+
+## Matriz de Correlación
+
+![Matriz de Correlación](images/02_corr_matriz_fraud.png)
+
+### Hallazgo
+
+Se identificaron variables con relaciones relevantes respecto a la variable objetivo, útiles para la detección de fraude.
 
 ---
 
@@ -138,51 +141,89 @@ Esta estrategia produjo los mejores resultados.
 
 # 🤖 Modelos Entrenados
 
-## Modelo 1
+## Modelo 1 — XGBoost + UnderSampling
 
-### XGBoost + UnderSampling
+Primer modelo entrenado utilizando reducción de la clase mayoritaria.
 
-Primer modelo de referencia para evaluar el efecto del balanceo mediante reducción de la clase mayoritaria.
+### Matriz de Confusión
 
-# 📈 Metricas 
-
-![Precision Recall Curve](images/pr_curve_comparison.png)
+![XGB UnderSampling](images/03_matriz_confusion_xgb_sub.png)
 
 ---
 
-## Modelo 2
+## Modelo 2 — XGBoost + SMOTE (5000/5000)
 
-### XGBoost + SMOTE (5000/5000)
+Modelo entrenado mediante balanceo sintético moderado.
 
-Modelo entrenado utilizando una estrategia de balanceo sintético moderada.
+### Matriz de Confusión
 
-# 📈 Metricas 
-
-![Precision Recall Curve](images/pr_curve_comparison.png)
+![XGB SMOTE 5000](images/04_matriz_confusion_xgb_mid.png)
 
 ---
 
-## Modelo 3
+## Modelo 3 — XGBoost + SMOTE Full
 
-### XGBoost + SMOTE Full
+Modelo entrenado utilizando toda la información disponible para generación sintética.
 
-Modelo entrenado utilizando la estrategia de balanceo más completa.
+### Matriz de Confusión
 
-# 📈 Metricas 
-
-![Precision Recall Curve](images/pr_curve_comparison.png)
+![XGB SMOTE Full](images/05_matriz_confusion_xgb_smote.png)
 
 ---
 
-## Modelo 4
+## Precision-Recall Curve para Modelos XGBoost
 
-### Red Neuronal Multicapa
+![Precision Recall XGB](images/06_precision_recall_curve_xgb_model.png)
 
-Arquitectura Deep Learning desarrollada para comparar su desempeño frente a los modelos basados en árboles.
+### Interpretación
 
-# 📈 Metricas 
+SMOTE Full obtuvo el mayor Average Precision (AP), mostrando el mejor equilibrio entre precisión y capacidad de detección.
 
-![Precision Recall Curve](images/pr_curve_comparison.png)
+---
+
+## ROC Curve para Modelos XGBoost
+
+![ROC XGB](images/07_ROC_curve_mod_val.png)
+
+### Interpretación
+
+Todos los modelos mostraron excelente capacidad de discriminación, con valores ROC-AUC superiores a 0.97.
+
+---
+
+# 🏆 Evaluación Final del Modelo Ganador
+
+## XGBoost + SMOTE Full
+
+### Matriz de Confusión en Test
+
+![XGB SMOTE Test](images/08_matriz_confusion_xgb_smote_test.png)
+
+Esta evaluación se realizó sobre el conjunto de prueba completamente aislado, permitiendo estimar el desempeño real del modelo sobre datos no vistos.
+
+---
+
+# 🧠 Red Neuronal Multicapa
+
+Se desarrolló una red neuronal para comparar su desempeño frente a XGBoost.
+
+## Curvas de Entrenamiento
+
+![Training Curves](images/09_accuracy_loss_curve_red_neuronal.png)
+
+### Observación
+
+El entrenamiento mostró convergencia estable sin evidencia significativa de sobreajuste.
+
+---
+
+## Matriz de Confusión
+
+![Neural Network Confusion Matrix](images/10_matriz_confusion_red_neuronal.png)
+
+### Observación
+
+La red neuronal logró detectar la mayoría de los fraudes, aunque presentó una cantidad considerablemente mayor de falsos positivos que XGBoost.
 
 ---
 
@@ -213,31 +254,35 @@ Dado el fuerte desbalance de clases, se utilizaron múltiples métricas de evalu
 
 ---
 
-# 📈 Curvas Precision-Recall Modelos XGB 
+# 📈 Comparación Final: Precision-Recall Curve
 
-![Precision Recall Curve](images/pr_curve_comparison.png)
+![XGB vs Neural Network PR](images/11_precision_recall_curve_xgb_vs_neuronal_red.png)
 
 ### Interpretación
 
-La métrica Average Precision (AP) mostró diferencias importantes entre los modelos.
+La curva Precision-Recall evidencia una ventaja clara de XGBoost + SMOTE Full frente a la red neuronal.
 
-El modelo XGBoost entrenado con SMOTE Full obtuvo el mejor desempeño, manteniendo una precisión elevada incluso para altos niveles de recall.
-
-Esto resulta especialmente relevante en problemas de fraude debido al fuerte desbalance de clases.
+| Modelo | AP |
+|----------|----------|
+| XGBoost + SMOTE Full | **0.86** |
+| Red Neuronal | 0.75 |
 
 ---
 
-# 📉 Curvas ROC Modelos XGB
+# 📉 Comparación Final: ROC Curve
 
-![ROC Curve](images/roc_curve_comparison.png)
+![XGB vs Neural Network ROC](images/12_ROC_curve_xgb_vs_red_neuronal.png)
 
 ### Interpretación
 
-Todos los modelos presentaron una excelente capacidad de discriminación.
+Ambos modelos presentan una excelente capacidad de discriminación.
 
-Sin embargo, la métrica ROC-AUC resultó menos sensible para distinguir el impacto real del balanceo de clases.
+| Modelo | ROC-AUC |
+|----------|----------|
+| XGBoost + SMOTE Full | **0.98** |
+| Red Neuronal | 0.97 |
 
-Por esta razón se complementó con el análisis mediante Precision-Recall.
+Aunque la diferencia en ROC-AUC es pequeña, la métrica Average Precision mostró una ventaja mucho más marcada para XGBoost, razón por la cual fue seleccionado como modelo final.
 
 ---
 
@@ -266,12 +311,13 @@ Por esta razón se complementó con el análisis mediante Precision-Recall.
 
 Los resultados demostraron que las estrategias de balanceo tienen un impacto significativo en el desempeño de los modelos de detección de fraude.
 
-### Hallazgos principales
+### Hallazgos Principales
 
 - UnderSampling produjo una pérdida importante de información.
 - Los modelos entrenados con SMOTE superaron ampliamente al UnderSampling.
 - La Red Neuronal mostró buen desempeño general, pero fue superada por XGBoost.
 - XGBoost combinado con SMOTE Full obtuvo el mejor equilibrio entre capacidad de detección y reducción de falsas alarmas.
+- Average Precision resultó ser una métrica más informativa que ROC-AUC para este problema altamente desbalanceado.
 
 En consecuencia, el modelo seleccionado para despliegue sería **XGBoost + SMOTE Full**.
 
