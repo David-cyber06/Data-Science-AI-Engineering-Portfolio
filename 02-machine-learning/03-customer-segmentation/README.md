@@ -176,9 +176,9 @@ Se identificaron cinco segmentos diferenciados de clientes.
 | --------- | ------------------------ |
 | Cluster 0 | Clientes Balanceados     |
 | Cluster 1 | Clientes Premium         |
-| Cluster 2 | Clientes de Bajo Valor   |
+| Cluster 2 | Jóvenes Gastadores       |
 | Cluster 3 | Alto Ingreso, Bajo Gasto |
-| Cluster 4 | Jóvenes Gastadores       |
+| Cluster 4 | Clientes de Bajo Valor   |
 
 ---
 
